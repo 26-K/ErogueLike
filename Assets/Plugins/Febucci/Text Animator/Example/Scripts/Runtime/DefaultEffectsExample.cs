@@ -16,24 +16,27 @@ namespace Febucci.UI.Examples
         {
             const char quote = '"';
             //builds the text with all the default tags
-            string builtText = "<b>You can add effects by using <color=red>rich text tags</color>.</b>" +
-                $"\nExample: writing {quote}<noparse><shake>I'm cold</shake></noparse>{quote} will result in {quote}<shake>I'm cold</shake>{quote}." +
-                $"\n\n Effects that animate through time are called {quote}<color=red>Behaviors</color>{quote}, and the default tags are: ";
-            for (int i = 0; i < TAnimTags.defaultBehaviors.Length; i++)
-            {
-                builtText += EffectsTesting.AddEffect(TAnimTags.defaultBehaviors[i]);
-            }
+            string builtText = "きゃっ。ぁっ……にるくくん、</color>." +
+                $"\nこれ、射精……ん、凄い……" +
+                $"\n<bounce>どぴゅっ、どぴゅっ</bounce>て……."+
+                $"\nこんな風に出るんですね……" +
+            $"大丈夫ですよ。このまま出し切っちゃってください";
 
-            builtText += $"\n\n<b>Effects that animate letters while they appear on screen are called {quote}<color=red>Appearances</color>{quote} and the default tags are</b>: ";
+            //for (int i = 0; i < TAnimTags.defaultBehaviors.Length; i++)
+            //{
+            //    builtText += EffectsTesting.AddEffect(TAnimTags.defaultBehaviors[i]);
+            //}
 
-            for (int i = 0; i < TAnimTags.defaultAppearances.Length; i++)
-            {
-                builtText += EffectsTesting.AddAppearanceEffect(TAnimTags.defaultAppearances[i]);
-            }
+            //builtText += $"\n\n<b>Effects that animate letters while they appear on screen are called {quote}<color=red>Appearances</color>{quote} and the default tags are</b>: ";
+
+            //for (int i = 0; i < TAnimTags.defaultAppearances.Length; i++)
+            //{
+            //    builtText += EffectsTesting.AddAppearanceEffect(TAnimTags.defaultAppearances[i]);
+            //}
 
             //shows the text dynamically (typewriter like)
             textAnimatorPlayer.ShowText(builtText);
-
+            //これ、射精……ん、凄い……どぴゅっ、どぴゅって……こんな風に出るんですね……。大丈夫ですよ。このまま出し切っちゃってください
         }
     }
 
